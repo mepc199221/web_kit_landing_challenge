@@ -1,6 +1,6 @@
 # ⚡️ Kit Landing Challenge⚡️
 
-Practica team 4 - bravo
+Practica team 4
 
 ## Tabla de Integrantes del Equipo
 
@@ -13,3 +13,4 @@ Practica team 4 - bravo
 | Miguel Polanco | Caracas |
 
 
+![image](https://github.com/user-attachments/assets/64fefd9a-93df-414f-a760-5336eaa3e4bf)
