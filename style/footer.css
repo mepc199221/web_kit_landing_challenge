@@ -1,0 +1,56 @@
+.footer-rosa{
+    background-color: #f58f9a;
+    height: 300px;
+    color: #3c363b;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer_titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    margin-bottom: 30px;
+    color: #3c363b;
+}
+
+.footer_subtitulo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #3c363b;
+}
+
+.contact-info{
+    display: flex;
+    justify-content:center;
+    font-family: Arial, Helvetica, sans-serif;
+    initial-letter-align: 10px;
+    margin-bottom: 15px;
+    margin-top: 50px;
+    color: #3c363b;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    initial-letter-align: 10px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    color: #3c363b;
+}
+
+.ubicacion{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    initial-letter-align: 10px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    color: #3c363b;
+}
+
+.pie-de-pagina{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3c363b;
+}
