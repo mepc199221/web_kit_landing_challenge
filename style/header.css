@@ -29,10 +29,8 @@ header {
     font-weight: bold;
     text-decoration: none;
     color: var(--petalPink);
-    /* No necesitamos z-index aquí si el icono y menú se posicionan correctamente */
 }
 
-/* Ocultar el checkbox por completo */
 .menu-toggle {
     display: none;
 }
@@ -43,12 +41,11 @@ header {
     font-size: 1.8em;
     cursor: pointer;
     color: var(--palePink1);
-    /* ¡Estos son los cambios clave para pegarlo a la derecha! */
-    position: absolute; /* Sacamos el icono del flujo normal */
-    right: 20px; /* Lo pegamos a 20px del borde derecho del header */
-    top: 50%; /* Lo centramos verticalmente */
-    transform: translateY(-50%); /* Ajuste para un centrado perfecto */
-    z-index: 101; /* Asegura que el icono esté por encima de todo lo demás en el header */
+    position: absolute; 
+    right: 20px;
+    top: 50%; 
+    transform: translateY(-50%);
+    z-index: 101;
 }
 
 /* Estilos por defecto para el menú de navegación (escritorio) */
@@ -110,7 +107,6 @@ header {
         display: block;
     }
 
-    /* Cuando el checkbox esté marcado, muestra el menú */
     #menu-toggle:checked ~ nav .main-nav {
         max-height: 250px; /* Ajusta a la altura máxima de tu menú desplegado */
     }
