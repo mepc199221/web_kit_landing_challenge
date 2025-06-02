@@ -1,0 +1,117 @@
+:root {
+    --palePink1: #f9ebf2;      /* Rosa muy pálido, casi blanco */
+    --palePink2: #f3e2e8;      /* Rosa pálido un poco más saturado */
+    --mediumPink: #fcd7da;     /* Rosa durazno suave */
+    --petalPink: #f58f9a;      /* Rosa intenso / frambuesa suave */
+    --onyxGrey: #3c363b;       /* Gris muy oscuro / casi negro carbón */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: var(--onyxGrey);
+    color: var(--palePink1);
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between; /* Mantiene el logo a la izquierda y el espacio */
+    align-items: center;
+    box-shadow: 0 0px 0px rgba(173, 126, 126, 0.2);
+    position: relative;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--petalPink);
+    /* No necesitamos z-index aquí si el icono y menú se posicionan correctamente */
+}
+
+/* Ocultar el checkbox por completo */
+.menu-toggle {
+    display: none;
+}
+
+/* Estilos para el icono del menú (label) */
+.menu-icon {
+    display: none; /* Ocultar por defecto en escritorio */
+    font-size: 1.8em;
+    cursor: pointer;
+    color: var(--palePink1);
+    /* ¡Estos son los cambios clave para pegarlo a la derecha! */
+    position: absolute; /* Sacamos el icono del flujo normal */
+    right: 20px; /* Lo pegamos a 20px del borde derecho del header */
+    top: 50%; /* Lo centramos verticalmente */
+    transform: translateY(-50%); /* Ajuste para un centrado perfecto */
+    z-index: 101; /* Asegura que el icono esté por encima de todo lo demás en el header */
+}
+
+/* Estilos por defecto para el menú de navegación (escritorio) */
+.main-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Visible en escritorio */
+    align-items: center;
+}
+
+.main-nav li {
+    margin-left: 20px;
+}
+
+.main-nav li a {
+    color: var(--palePink1);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.main-nav li a:hover {
+    color: var(--petalPink);
+}
+
+
+/* Estilos para el menú de navegación en móviles */
+@media (max-width: 1024px) {
+    /* Mostrar el icono de menú en móviles */
+    .menu-icon {
+        display: block; /* Solo se muestra en móviles */
+    }
+
+    /* Ocultar el menú de navegación por defecto en móviles */
+    .main-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--onyxGrey);
+        position: absolute;
+        top: 100%; /* Posiciona justo debajo del header */
+        left: 0;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        z-index: 99;
+    }
+
+    .main-nav li {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-nav li a {
+        padding: 10px;
+        display: block;
+    }
+
+    /* Cuando el checkbox esté marcado, muestra el menú */
+    #menu-toggle:checked ~ nav .main-nav {
+        max-height: 250px; /* Ajusta a la altura máxima de tu menú desplegado */
+    }
+}
