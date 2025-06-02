@@ -1,17 +1,16 @@
 
-/* /* Sidebar */
+/* Sidebar */
 .sidebar {
-    width: 250px;
-    height: 750px;
+    width: 240px;
+    height: 560px;
     background-color: #f3e2e8; /* Color 2: Rosa pálido */
-    border-radius: 9px;
+    border-right: 1px solid #fcd7da; /* Color 3: Rosado Palido */
     box-shadow: 0 7px 9px rgba(0, 0, 0, 0.377); /* Sombra suave */
     padding: 20px;
     flex-shrink: 0;
     align-self: flex-start;
     max-height: calc(1000vh - 90px);
     overflow-y: auto;
-    margin-left: 35px; /* Añadido margen entre contenido y sidebar */
 }
 
 .sidebar p{
