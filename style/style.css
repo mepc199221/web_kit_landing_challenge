@@ -1,0 +1,26 @@
+.main-content {
+  display: flex;
+  flex-direction: row;
+
+}
+
+aside {
+  width: 20%;
+  background-color: #f4f4f4;
+}
+
+
+.main-section {
+    color: #3c363b; /* color5 */
+    font-family: 'Arial';
+    text-align: center;
+}
+
+
+
+.categories {
+    background-color: #f9ebf2; /* color1 */
+    color: #3c363b; /* color5 */
+    font-family: 'Arial';
+    text-align: center;
+}
