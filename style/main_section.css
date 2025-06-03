@@ -44,16 +44,12 @@
     border-radius: 12px;
 }
 
-.body__title 
-{ font-family: "Bad Script", cursive;
+.body__title{ font-family: "Bad Script", cursive;
 font-weight: 400;
 font-style: normal;
 
 }
+
 .body__title-size{
-    font-size: 40px;
-    
-
-
+    font-size:40px;
 }
-

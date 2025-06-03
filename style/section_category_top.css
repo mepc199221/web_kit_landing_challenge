@@ -1,0 +1,36 @@
+.category-section {
+    background-color: #f3e2e8; /* color2 */
+    padding: 15px;
+    border-radius: 6px;
+    max-width: auto;  
+}
+
+.category-section > h3 {
+    color: #3c363b; /* color5 */
+    font-family: 'Arial';
+    text-align: center;
+}
+.category-section > ul {
+
+    display: flex; /* Visible en escritorio */
+    flex-direction: column; /* Alineación vertical */
+    align-items: center; /* Centrado horizontal */
+}
+
+.category-section > ul li {
+    margin: 3px 0; /* Espacio entre los elementos de la lista */
+    list-style: none; /* Elimina los puntos de la lista */
+    display: flex; /* Visible en escritorio */
+    align-items: center;
+}
+
+
+.category-section > ul li {
+    color: var(--palePink1);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.category-section > ul li a:hover {
+    color: var(--petalPink);
+}
